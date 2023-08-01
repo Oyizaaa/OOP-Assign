@@ -72,7 +72,7 @@ echo "Fruit 2: " . $fruit2->get_name() . "\n";
 echo "Fruit 3: " . $fruit3->get_name() . "\n";
 echo "Fruit 4: " . $fruit4->get_name() . "\n";
 
-
+//my name is aisha
 
 
 ?>
