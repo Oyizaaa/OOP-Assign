@@ -59,12 +59,21 @@ namespace MyNamespace;
 
 class MyClass {
     public function sayHello() {
-        echo "Hello from MyClass in MyNamespace!";
+        echo "Hello from MyClass!";
     }
 }
 
-// Using the class from the namespace
-$myObj = new MyNamespace\MyClass();
-$myObj->sayHello();
+namespace AnotherNamespace;
 
-?>
+class AnotherClass {
+    public function sayHello() {
+        echo "Hello from AnotherClass!";
+    }
+}
+
+// Using classes from different namespaces
+$myObj = new \MyNamespace\MyClass();
+$anotherObj = new \AnotherNamespace\AnotherClass();
+
+$myObj->sayHello();
+$anotherObj->sayHello();
